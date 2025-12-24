@@ -1,3 +1,4 @@
+import PostCreateForm from '@/components/posts/post-create-form';
 
 interface TopicShowPageProps {
   params: Promise<{
@@ -16,7 +17,9 @@ export default async function TopicShowPage({ params }: TopicShowPageProps) {
         </h1>
       </div>
 
-      <div></div>
+      <div>
+        <PostCreateForm slug={slug} />
+      </div>
     </div>
   );
 }
